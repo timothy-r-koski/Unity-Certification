@@ -1,9 +1,7 @@
 fileFormatVersion: 2
-guid: 638bd428574022f4dbfc84b64c1dc892
-labels:
-- Audio
-- Architecture
-timeCreated: 1470518040
+guid: ad787dd1287d48c43ba352d2bbf1ae2d
+folderAsset: yes
+timeCreated: 1470598589
 licenseType: Free
 DefaultImporter:
   userData: 

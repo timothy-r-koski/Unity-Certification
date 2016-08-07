@@ -1,5 +1,7 @@
 fileFormatVersion: 2
 guid: 5e588ee72593b0840b87d0583735e759
+labels:
+- Audio
 timeCreated: 1470515942
 licenseType: Free
 MonoImporter:

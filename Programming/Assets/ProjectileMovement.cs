@@ -9,9 +9,13 @@ public class ProjectileMovement : MonoBehaviour {
     void Start () {
         projectile = GetComponent<ProjectileLocation>();
 	}
-	
+
+    void FixedUpdate() {
+        projectile.UpdatePosition();
+    }
+
 	// Update is called once per frame
 	void Update () {
-        projectile.UpdatePosition();
+       
     }
 }

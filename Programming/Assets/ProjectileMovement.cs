@@ -4,6 +4,7 @@ using System.Collections;
 public class ProjectileMovement : MonoBehaviour {
 
     ProjectileLocation projectile;
+    bool hasFired = false;
 
     // Use this for initialization
     void Start () {
@@ -11,11 +12,20 @@ public class ProjectileMovement : MonoBehaviour {
 	}
 
     void FixedUpdate() {
-        projectile.UpdatePosition();
+        if (!hasFired)
+        {
+            projectile.UpdatePosition();
+            hasFired = true;
+        }
+        else
+        {
+            projectile.UpdateFiredPosition();
+        }
+         
     }
 
 	// Update is called once per frame
 	void Update () {
-       
+     
     }
 }

@@ -5,10 +5,12 @@ public class ProjectileLocation : MonoBehaviour {
 
     public float force = 20f;
     public float gravity = 9.41f;
+    public float duration = 5;
+    float startTime;
 
-	// Use this for initialization
-	void Start () {
-
+    // Use this for initialization
+    void Start () {
+        startTime = Time.time;
 	}
 
     public void UpdatePosition() {
@@ -24,6 +26,9 @@ public class ProjectileLocation : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-	
-	}
+        if (startTime + duration < Time.time)
+        {
+            Destroy(gameObject);
+        }
+    }
 }
